@@ -1,0 +1,22 @@
+universe = vanilla
+
+
+executable = /home/abandopa/projects/low_mass_ns_search/pycbc/bin/bank/pycbc_geom_nonspinbank
+
+
+getenv = True
+
+
+arguments = --pn-order twoPN --f0 15 --f-low 15 --f-upper 2048 --delta-f 0.01 --min-match 0.95 --min-mass1 0.2 --min-mass2 0.2  --max-mass1 1.0 --max-mass2 1.0 --verbose --output-file temp_bank_NonSpin-15Hz.xml --filter-cutoff SchwarzISCO --psd-model aLIGOZeroDetHighPower
+
+
+error = logs/temp_gen_$(Cluster).err
+output = logs/temp_gen_$(Cluster).out
+log = logs/temp_gen_$(Cluster).log
+
+request_cpus    = 1 
+request_memory  = 10 GB
+request_disk    = 10 GB
+
+accounting_group=sugwg.astro
+queue 
