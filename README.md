@@ -41,7 +41,7 @@ we have listed the calculated values of match between injected equal mass binary
 
    c. `mchirp_vs_match_BSK21_745322.0.txt`: $\Lambda_1$, $\Lambda_2$ used in the match computations are derived from the [BSk21](https://www.aanda.org/articles/aa/full_html/2013/12/aa21697-13/aa21697-13.html) equation of state.
    
-(3) The equation of state files tabulate `neutron star mass` ($m (M_{\odot}$)) and the corresponding `tidal deformability` ($\Lambda$) computed using modules from the publicly available library [LALSimulation](https://lscsoft.docs.ligo.org/lalsuite/lalsimulation/index.html). 
+(3) The equation of state files tabulate `neutron star mass` ( $m (M_{\odot}$ )) and the corresponding `tidal deformability` ( $\Lambda$ ) computed using modules from the publicly available library [LALSimulation](https://lscsoft.docs.ligo.org/lalsuite/lalsimulation/index.html). 
 
    a. `APR-EOS.txt` : mass and tidal deformability values for the APR equation of state.
    
