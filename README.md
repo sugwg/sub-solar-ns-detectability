@@ -20,6 +20,11 @@
 
 ## License
 
+![Creative Commons License](https://i.creativecommons.org/l/by-sa/3.0/us/88x31.png "Creative Commons License")
+
+This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 United States License](http://creativecommons.org/licenses/by-sa/3.0/us/).
+
+
 ## Introduction
 
 This notebook is a companion to the paper posted at <span style="color:red;">add URL</span>, which examines the effect of the finite size of neutron stars on the detectability of gravitational wave signals emitted by inspiralling sub solar-mass binary neutron star systems, using template bank searches. It provides the data files generated from the analysis, and demonstrates how to use these to generate the figures in the paper. 
