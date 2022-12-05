@@ -27,8 +27,8 @@ This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unite
 
 ## Introduction
 
-This notebook is a companion to the paper posted at <span style="color:red;">add URL</span>, which examines the effect of the finite size of neutron stars on the detectability of gravitational wave signals emitted by inspiralling sub solar-mass binary neutron star systems, using template bank searches. It provides the data files generated from the analysis, and demonstrates how to use these to generate the figures in the paper. 
-The figures in this notebook serve to corroborate the results from the paper, illustrating the loss in sensitivity of the Advanced LIGO detectors to signals from these sources, on neglecting the tidal deformability and lower merger frequencies of neutron stars in the search templates.
+This repository is a companion to the paper posted at <span style="color:red;">add URL</span>, which examines the effect of the finite size of neutron stars on the detectability of gravitational wave signals emitted by inspiralling sub solar-mass binary neutron star systems, using template bank searches. It provides the data files generated from the analysis, and demonstrates how to use these to generate the figures in the paper. 
+The figures in the notebook serve to corroborate the results from the paper, illustrating the loss in sensitivity of the Advanced LIGO detectors to signals from these sources, on neglecting the tidal deformability and lower merger frequencies of neutron stars in the search templates.
 
 ## Data Files
 
@@ -53,10 +53,18 @@ we have listed the calculated values of match between injected equal mass binary
    b. `SLY-EOS.txt` : mass and tidal deformability values for the SLy4 equation of state.
    
    c. `BSK21-EOS.txt` : mass and tidal deformability values for the BSk21 equation of state.
+   
+(4) The mass-radius files contain `NS masses`($m (M_{\odot}$)) and the corresponding `radii`(km), evaluated by integrating the Tolman-Oppenheimer-Volkoff equations, for the APR, SLy4 and BSk21 equations of state. 
 
-(4) `M1010_APR_LP.txt`: contains values for orbital frequency, ADM mass and angular momentum of a simulated binary neutron star system with $m_1 = m_2 = 1 \, M_{\odot}$ at different stages of its inspiral phase, as computed with LORENE.
+   a. `APR-mass-radius.txt` : neutron star mass and radius values for the APR equation of state.
+   
+   b. `SLY4-mass-radius.txt` : neutron star mass and radius values for the SLy4 equation of state.
+   
+   c. `BSK21-mass-radius.txt` : neutron star mass and radius values for the BSk21 equation of state.   
 
-(5) The following three files tabulate the estimated values of the orbital frequencies of the binary neutron stars at the mass shedding limit for the binary neutron star inspiral signals, simulated using the publicly available library [LORENE](https://lorene.obspm.fr/), for the three different equations of state considered in this study.
+(5) `M1010_APR_LP.txt`: contains values for orbital frequency, ADM mass and angular momentum of a simulated binary neutron star system with $m_1 = m_2 = 1 \, M_{\odot}$ at different stages of its inspiral phase, as computed with LORENE.
+
+(6) The following three files tabulate the estimated values of the orbital frequencies of the binary neutron stars at the mass shedding limit for the binary neutron star inspiral signals, simulated using the publicly available library [LORENE](https://lorene.obspm.fr/), for the three different equations of state considered in this study.
    
    a. `APR_lorene_ISCO.txt`: simulations performed for the APR equation os state.
 
@@ -64,13 +72,13 @@ we have listed the calculated values of match between injected equal mass binary
 
    c. `BSk21_lorene_ISCO.txt`: simulations performed for the APR equation os state.
    
-(6) `banksims_BBH.txt`: contains the results of template bank simulations performed for injected binary black hole signals with component masses in the range $[0.2,1.0] \, M_{\odot}$, against a set of binary black hole templates generated to cover the same parameter space, i.e. $m_1,m_2 \in [0.2,1.0] \, M_{\odot}$. The column headings are as follows:
+(7) `banksims_BBH.txt`: contains the results of template bank simulations performed for injected binary black hole signals with component masses in the range $[0.2,1.0] \, M_{\odot}$, against a set of binary black hole templates generated to cover the same parameter space, i.e. $m_1,m_2 \in [0.2,1.0] \, M_{\odot}$. The column headings are as follows:
 
 `injection-m1`,  `injection-m2`, `lambda1` (0), `lambda2` (0), `template_m1`, `template_m2`, `fitting_factor`,  `same_mass_match(injection,BBH)` (1),  `f_{Schwarzschild ISCO}`
 
 where `injection-m1`,  `injection-m2` are the masses of the black holes used for the injected signals, `lambda1`, `lambda2` are their respective tidal deformabilities, which are by definiton 0 for black holes,  `template_m1`, `template_m2` are the masses from the template bank for which the calculated match value is the fitting factor, `same_mass_match(injection,BBH)` is the match between the injected binary black hole signal with the individual masses being `injection-m1`,  `injection-m2` and a binary black hole signal having the same component masses, which is by definition 1,  and `f_{Schwarzschild ISCO}` is the frequency of gravitational wave emission for a point particle orbitting around a Schwarzschild black hole of mass injection-m1+injection-m2, in its innermost stable circular orbit (ISCO). 
 
-(7) The results of template bank simulations performed for injected binary neutron star signals with component masses in the range $[0.2,1.0] \, M_{\odot}$ and tidal deformabilities derived from the aforementioned equations of state, are summarized in the next three files. The column headings for each of these files are as follows: 
+(8) The results of template bank simulations performed for injected binary neutron star signals with component masses in the range $[0.2,1.0] \, M_{\odot}$ and tidal deformabilities derived from the aforementioned equations of state, are summarized in the next three files. The column headings for each of these files are as follows: 
 
 `injection-m1`,  `injection-m2`, `lambda1`, `lambda2`, `template_m1`, `template_m2`, `fitting_factor`,  `same_mass_match(BNS,BBH)`,  `$f_{Roche}$`
 
@@ -82,7 +90,7 @@ where `injection-m1`,  `injection-m2` are the masses of the component neutron st
 
    c. `BSK21_bns_rlo_data.txt`: template bank simulation results for the BSk21 equation of state.
 
-(8) `nonecco3b.txt`: contains upper limits on the merger rate for non-eccentric compact binary sources, downloaded from the [github repository](https://github.com/gwastro/subsolar-O3-search/blob/master/upper_limits/noneccO3b.txt) for the public data release for the search for subsolar-mass binaries through LIGO and Virgo's third observing run, presented in the work by [Nitz & Wang](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.023024).  
+(9) `nonecco3b.txt`: contains upper limits on the merger rate for non-eccentric compact binary sources, downloaded from the [github repository](https://github.com/gwastro/subsolar-O3-search/blob/master/upper_limits/noneccO3b.txt) for the public data release for the search for subsolar-mass binaries through LIGO and Virgo's third observing run, presented in the work by [Nitz & Wang](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.106.023024).  
 
 The unit for masses of the compact objects tablulated in all the above data files is $M_{\odot}$, the tidal deformabilities are dimensionless, the unit for frequency is Hz, and all other quantities are dimensionless.
 
@@ -107,6 +115,6 @@ You can then connect to the notebook server at the URL printed by ``jupyter``. N
 
 ## Funding
 
-This work was supported by NSF awards PHY-2011655 (DAB, AB), PHY-2011725 (DR), PHY-2020275 (DR), PHY-2116686 (DR), and AST-2108467 (DR), and DOE award DE-SC0021177 (DR). Computations were supported through computational resources provided by Syracuse University.
+This work was supported by NSF awards PHY-2011655 (DAB, AB), PHY-2011725 (DR), PHY-2020275 (DR), PHY-2116686 (DR), and AST-2108467 (DR), and DOE awards DE-SC0021177 (DR), DE-FG02-92ER40750 (JP). Computations were supported through computational resources provided by Syracuse University.
 
 
