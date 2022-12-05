@@ -62,7 +62,11 @@ we have listed the calculated values of match between injected equal mass binary
    
    c. `BSK21-mass-radius.txt` : neutron star mass and radius values for the BSk21 equation of state.   
 
+<<<<<<< HEAD
 (5) `M1010_APR_LP.txt`: contains values for orbital frequency, ADM mass and angular momentum of a simulated binary neutron star system with $m_1 = m_2 = 1 \, M_{\odot}$ at different stages of its inspiral phase, as computed with LORENE.
+=======
+(4) `M1010_APR_LP.txt`: contains values for orbital frequency, ADM mass and angular momentum of a simulated binary neutron star system with $m_1 = m_2 = 1 M_{\odot}$ at different stages of its inspiral phase, as computed with LORENE.
+>>>>>>> dd13b02790f16027033b1a895b1064baec74d253
 
 (6) The following three files tabulate the estimated values of the orbital frequencies of the binary neutron stars at the mass shedding limit for the binary neutron star inspiral signals, simulated using the publicly available library [LORENE](https://lorene.obspm.fr/), for the three different equations of state considered in this study.
    
@@ -72,13 +76,21 @@ we have listed the calculated values of match between injected equal mass binary
 
    c. `BSk21_lorene_ISCO.txt`: simulations performed for the APR equation os state.
    
+<<<<<<< HEAD
 (7) `banksims_BBH.txt`: contains the results of template bank simulations performed for injected binary black hole signals with component masses in the range $[0.2,1.0] \, M_{\odot}$, against a set of binary black hole templates generated to cover the same parameter space, i.e. $m_1,m_2 \in [0.2,1.0] \, M_{\odot}$. The column headings are as follows:
+=======
+(6) `banksims_BBH.txt`: contains the results of template bank simulations performed for injected binary black hole signals with component masses in the range $[0.2,1.0] M_{\odot}$, against a set of binary black hole templates generated to cover the same parameter space, i.e. $m_1,m_2 \in [0.2,1.0] M_{\odot}$. The column headings are as follows:
+>>>>>>> dd13b02790f16027033b1a895b1064baec74d253
 
 `injection-m1`,  `injection-m2`, `lambda1` (0), `lambda2` (0), `template_m1`, `template_m2`, `fitting_factor`,  `same_mass_match(injection,BBH)` (1),  `f_{Schwarzschild ISCO}`
 
 where `injection-m1`,  `injection-m2` are the masses of the black holes used for the injected signals, `lambda1`, `lambda2` are their respective tidal deformabilities, which are by definiton 0 for black holes,  `template_m1`, `template_m2` are the masses from the template bank for which the calculated match value is the fitting factor, `same_mass_match(injection,BBH)` is the match between the injected binary black hole signal with the individual masses being `injection-m1`,  `injection-m2` and a binary black hole signal having the same component masses, which is by definition 1,  and `f_{Schwarzschild ISCO}` is the frequency of gravitational wave emission for a point particle orbitting around a Schwarzschild black hole of mass injection-m1+injection-m2, in its innermost stable circular orbit (ISCO). 
 
+<<<<<<< HEAD
 (8) The results of template bank simulations performed for injected binary neutron star signals with component masses in the range $[0.2,1.0] \, M_{\odot}$ and tidal deformabilities derived from the aforementioned equations of state, are summarized in the next three files. The column headings for each of these files are as follows: 
+=======
+(7) The results of template bank simulations performed for injected binary neutron star signals with component masses in the range $[0.2,1.0] M_{\odot}$ and tidal deformabilities derived from the aforementioned equations of state, are summarized in the next three files. The column headings for each of these files are as follows: 
+>>>>>>> dd13b02790f16027033b1a895b1064baec74d253
 
 `injection-m1`,  `injection-m2`, `lambda1`, `lambda2`, `template_m1`, `template_m2`, `fitting_factor`,  `same_mass_match(BNS,BBH)`,  `$f_{Roche}$`
 
