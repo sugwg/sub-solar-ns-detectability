@@ -116,6 +116,6 @@ You can then connect to the notebook server at the URL printed by ``jupyter``. N
 
 ## Funding
 
-This work was supported by NSF awards PHY-2011655 (DAB, AB), PHY-2011725 (DR), PHY-2020275 (DR), PHY-2116686 (DR), and AST-2108467 (DR), and DOE awards DE-SC0021177 (DR), DE-FG02-92ER40750 (JP). Computations were supported through computational resources provided by Syracuse University.
+This work was supported by NSF awards PHY-2011655 (DAB, AB), PHY-2116686 (DAB, DR), PHY-2011725 (DR), PHY-2020275 (DR), and AST-2108467 (DR), and DOE awards DE-SC0021177 (DR), DE-FG02-92ER40750 (JP) and DE-FG02-87ER40365 (CJH, BR). Computations were supported through computational resources provided by Syracuse University. DAB and CJH thank the Kavli Institute for Theoretical Physics (KITP) which is supported by the NSF award PHY-1748958.
 
 
