@@ -27,7 +27,7 @@ This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unite
 
 ## Introduction
 
-This repository is a companion to the paper posted at <span style="color:red;">add URL</span>, which examines the effect of the finite size of neutron stars on the detectability of gravitational wave signals emitted by inspiralling sub solar-mass binary neutron star systems, using template bank searches. It provides the data files generated from the analysis, and demonstrates how to use these to generate the figures in the paper. 
+This repository is a companion to the paper posted at [arXiv:2212.03855](https://arxiv.org/abs/2212.03855), which examines the effect of the finite size of neutron stars on the detectability of gravitational wave signals emitted by inspiralling sub solar-mass binary neutron star systems, using template bank searches. It provides the data files generated from the analysis, and demonstrates how to use these to generate the figures in the paper. 
 The figures in the notebook serve to corroborate the results from the paper, illustrating the loss in sensitivity of the Advanced LIGO detectors to signals from these sources, on neglecting the tidal deformability and lower merger frequencies of neutron stars in the search templates.
 
 ## Data Files
